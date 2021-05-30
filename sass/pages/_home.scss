@@ -197,3 +197,50 @@ body{
         }
     }
 }
+
+// MEDIA QUERYS DESKTOP
+@media only screen and (min-width: map-get($breakpoints, desktop)){
+    // General
+    body{
+        padding: 0;
+        background-color: map-get($blanco, blancoFondo);
+    }
+    // HEADER
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .caja2{
+        flex-basis: 150px;
+        align-self: center;
+    }
+    .lineaHorizontal{
+        display: none;
+    }
+    // MAIN
+    main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container2{
+        display: flex;
+        .tarjeta{
+            width: 250px;
+            margin: 16px 24px;
+        }
+    }
+    .overview{
+        align-self: flex-start;
+    }
+    .container3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .tarjetaMini{
+            width: 250px;
+            margin: 16px 24px;
+        }
+    }
+}
