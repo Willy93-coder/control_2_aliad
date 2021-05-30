@@ -1,6 +1,47 @@
 /* @VARIABLES */
 /* ********** */
 
+// COLORES
+$grises: (
+    gris1: #F1F0F0,
+    gris2: #969696,
+    gris3: #4C4C4C
+);
+
+$azules: (
+    twitter: #55ACEE,
+    facebook: #0A95F8,
+);
+
+$rojo: (
+    youtube: #FF0000,
+    today: #CA4F56
+);
+
+$instagram: (
+    amarillo: #DCCA2A,
+    lila: #D336C4
+);
+
+$verde: (
+    today: #5EBEB4
+);
+
+$blanco: (
+    blancoFondo: #F8F8F8
+);
+
+// TIPOGRAFÍAS
+$fontSize: 14px;
+$fontTitle: 18px;
+$fontFollowers: 16px;
+$fontNumber: 48px;
+$fontToday: 12px;
+$fontFamily: "robotoRegular", sans-serif;
+$fontFamily-bold: "robotoBold", sans-serif;
+$fontFamily-light: "robotoLight", sans-serif;
+$fontFamily-thin: "robotoThin", sans-serif;
+
 // TAMAÑOS
 $dispositivos: (
     smartphone: 360px,

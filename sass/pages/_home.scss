@@ -1,2 +1,192 @@
 /* @HOME */
 /* ********** */
+// GENERAL
+header, main, footer{
+    padding: 16px 12px;
+}
+
+body{
+    padding: 12px 48px;
+    background: linear-gradient(to right, map-get($grises, gris2) 0%, map-get($grises, gris1) 100%);
+    .container{
+        background-color: map-get($blanco, blancoFondo);
+    }
+}
+
+// HEADER
+.lineaHorizontal{
+    border-top: 1px solid map-get($grises, gris2);
+    margin: 1rem 0;
+}
+
+// MAIN
+// Tarjetas Grandes
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get($grises , gris1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    // Facebook
+    &__facebook{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background: url("../img/iconos/facebook.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    // Twitter
+    &__twitter{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background: url("../img/iconos/twitter.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    // Instagram
+    &__instagram{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background: url("../img/iconos/instagram.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    // Youtube
+    &__youtube{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background: url("../img/iconos/youtube.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    &__numbers{
+    }
+    &__followers{
+    }
+    &__todayUp{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background: url("../img/iconos/flecha_arriba.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    &__todayDown{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background: url("../img/iconos/flecha_abajo.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+}
+
+// Colores bordes tarjetas
+.facebook{
+    border-top: 3px solid map-get($azules, facebook);
+}
+
+.twitter{
+    border-top: 3px solid map-get($azules, twitter);
+}
+
+.instagram{
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(to right, map-get($instagram, amarillo) 0%, map-get($instagram, lila) 100%) 1;
+}
+
+.youtube{
+    border-top: 3px solid map-get($rojo, youtube);
+}
+
+// Tarjetas Pequeñas
+.tarjetaMini{
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background-color: map-get($grises, gris1);
+    &__seccion1{
+        display: flex;
+        justify-content: space-between;
+        &__titulo{
+            font-family: $fontFamily;
+            font-size: $fontSize;
+            color: map-get($grises, gris3);
+        }
+    }
+    &__seccion2{
+        display: flex;
+        justify-content: space-between;
+        &__numbers{
+            font-family: $fontFamily-bold;
+            font-size: $fontTitle;
+        }
+        &__percentatgesUp{
+            font-family: $fontFamily-bold;
+            font-size: $fontToday;
+            color: map-get($verde, today);
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background: url("../img/iconos/flecha_arriba.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+            }
+        }
+        &__percentatgesDown{
+            font-family: $fontFamily-bold;
+            font-size: $fontToday;
+            color: map-get($rojo, today);
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background: url("../img/iconos/flecha_abajo.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+            }
+        }
+    }
+}
