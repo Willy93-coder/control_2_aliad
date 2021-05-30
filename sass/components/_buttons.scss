@@ -1,2 +1,24 @@
 /* @BOTONES */
 /* ********** */
+
+// Boton switch
+.tema__btn{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: map-get($grises, gris2);
+    &::before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: map-get($grises, gris1);
+    }
+    &:checked::before{
+        left: 20px;
+    }
+}

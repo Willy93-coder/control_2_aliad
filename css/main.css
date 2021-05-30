@@ -437,6 +437,29 @@ h4, h5, p {
 
 /* @BOTONES */
 /* ********** */
+.tema__btn {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  appearance: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #969696;
+}
+
+.tema__btn::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #F1F0F0;
+}
+
+.tema__btn:checked::before {
+  left: 20px;
+}
+
 /* @CAROUSEL */
 /* ********** */
 /* @COVER_BANNER */
@@ -471,6 +494,12 @@ body .container {
 .lineaHorizontal {
   border-top: 1px solid #969696;
   margin: 1rem 0;
+}
+
+.tema {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tarjeta {

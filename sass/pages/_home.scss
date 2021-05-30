@@ -19,6 +19,13 @@ body{
     margin: 1rem 0;
 }
 
+// Dark Mode
+.tema{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 // MAIN
 // Tarjetas Grandes
 .tarjeta{
